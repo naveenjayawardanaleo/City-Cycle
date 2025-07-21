@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:background="@color/black"
+    android:fillViewport="true"
+    tools:context=".SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp"
+            style="@style/TextHeadline" />
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/edittext_bg"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/baseline_account_circle_24" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@drawable/baseline_person_24"
+
+
+            android:hint="Full Name"
+
+            style="@style/inoutStyle" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@drawable/baseline_email_24"
+
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            style="@style/inoutStyle" />
+
+        <EditText
+            android:id="@+id/etContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@drawable/baseline_call_24"
+            android:drawablePadding="10dp"
+            android:hint="Telephone"
+            android:inputType="phone"
+            style="@style/inoutStyle"/>
+
+        <EditText
+            android:id="@+id/etDob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@drawable/baseline_perm_contact_calendar_24"
+            android:drawablePadding="10dp"
+            android:focusable="false"
+            android:hint="Date of Birth"
+            android:inputType="none"
+            style="@style/inoutStyle" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            style="@style/inputlabel"
+            android:text="Select gender" />
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittext_bg"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+
+
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@drawable/baseline_password_24"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            style="@style/inoutStyle" />
+
+        <CheckBox
+            android:id="@+id/cbTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            style="@style/inputlabel"
+            android:text="I agree to Terms and Conditions" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+
+            android:text="Register"
+            style="@style/buttonStyle" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Already have an account? Login" />
+    </LinearLayout>
+</ScrollView>
